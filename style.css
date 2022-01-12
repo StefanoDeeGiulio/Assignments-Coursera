@@ -1,124 +1,118 @@
-        * {
-            box-sizing: border-box;
-        }
-        
-        #body {
-            background-color: navy;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        
-        #row {
-            width: 100%;
-            padding-left: 20px;
-            position: relative;
-        }
-        
-        #title {
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 36px;
-            color: white;
-        }
-        
-        #welcomesentence {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-align: center;
-            font-size: 15px;
-            color: white;
-        }
-        
-        #section1 {
-            margin-top: 40px;
-            background-color: darkgreen;
-            height: 200px;
-            width: 300px;
-            color: white;
-            float: left;
-        }
-        
-        #section2 {
-            background-color: white;
-            height: 200px;
-            width: 300px;
-            color: darkgreen;
-            margin-top: 40px;
-            margin-left: 3px;
-            margin-right: 3px;
-            float: left;
-        }
-        
-        #section3 {
-            background-color: red;
-            height: 200px;
-            width: 300px;
-            color: white;
-            margin-top: 40px;
-            float: left;
-        }
-        
-        #subtitle1 {
-            height: 50px;
-            width: 150px;
-            position: relative;
-            bottom: 8%;
-            left: 68.5%;
-            background-color: navy;
-            border: darkgreen solid 1px;
-        }
-        
-        #subtitle2 {
-            height: 50px;
-            width: 150px;
-            position: relative;
-            bottom: 8%;
-            left: 68.5%;
-            background-color: navy;
-            color: white;
-            border: solid white 1px;
-        }
-        
-        #subtitle3 {
-            height: 50px;
-            width: 150px;
-            position: relative;
-            bottom: 8%;
-            left: 68.5%;
-            background-color: navy;
-            border: solid red 1px;
-        }
-        
-        @media(min-width: 992px) {
-            #section1 {
-                width: 32%;
-            }
-            #section2 {
-                width: 32%;
-            }
-            #section3 {
-                width: 32%;
-            }
-        }
-        
-        @media(min-width: 768px) and (max-width: 991px) {
-            #section3 {
-                float: left;
-                width: 100%;
-            }
-            #section1 {
-                width: 49%;
-            }
-            #section2 {
-                width: 49%;
-            }
-        }
-        
-        @media(max-width: 768px) {
-            #section2 {
-                float: left;
-            }
-            #section1,
-            #section2,
-            #section3 {
-                width: 100%;
-            }
-        }
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#body {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#row {
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: black;
+}
+
+#welcomesentence {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+#section1 {
+    position: relative;
+    float: left;
+    margin: 20px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: grey;
+    font-size: 20px;
+    color: black;
+}
+
+#section2 {
+    position: relative;
+    float: left;
+    margin: 20px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: grey;
+    font-size: 20px;
+    color: black;
+}
+
+#section3 {
+    position: relative;
+    float: left;
+    margin: 20px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: grey;
+    font-size: 20px;
+    color: black;
+}
+
+#subtitle1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 130px;
+    height: 30px;
+    background-color: palevioletred;
+    box-sizing: border-box;
+}
+
+#subtitle2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 130px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    box-sizing: border-box;
+}
+
+#subtitle3 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 130px;
+    height: 30px;
+    background-color: yellow;
+    box-sizing: border-box;
+    color: black;
+}
+
+@media(min-width: 992px) {
+    section {
+        width: calc((100% - 120px) / 3);
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    section {
+        width: calc((100% - 80px) / 2);
+    }
+    #section3 {
+        width: calc(100% - 40px);
+    }
+}
+
+@media(max-width: 768px) {
+    section {
+        width: calc(100% - 40px);
+    }
+}
